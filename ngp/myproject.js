@@ -125,10 +125,10 @@ paper.view.viewSize.height = 2400;
 var colors = []; var palette = []; 
 var woodframe = new Path();var framegap = new Path();
 var frameColor = "#60513D"
-var petalspiky = R.random_int(5, 12);
+var petalspiky = R.random_int(8, 20);
 console.log('spikeyness: '+petalspiky)
 
-numofcolors = R.random_int(1, 6);; //Sets the number of colors to pick for the pallete
+numofcolors = R.random_int(2, 6);; //Sets the number of colors to pick for the pallete
 //numofcolors = $fx.getParam("number_colors");
 if (qc){numofcolors = qc};
 console.log(numofcolors+" colors");
@@ -277,7 +277,7 @@ for (z = 0; z < stacks; z++) {
     //$fx.preview();
 
     
-    floatingframe();
+    //floatingframe();
     //send features to upspire.studio
     upspirestudio(features)
 
