@@ -87,7 +87,7 @@ var testingGo = new URLSearchParams(window.location.search).get('testing');// Ru
 
 var frC = R.random_int(1, 3); //random frame color white, mocha, or rainbow
 var orient=R.random_int(1, 4); // decide on orientation 
-var halfsize = R.random_int(1, 5);
+var halfsize = R.random_int(2, 5);
 
 //Set the properties for the artwork where 100 = 1 inch
 var wide = 800; 
@@ -125,7 +125,7 @@ paper.view.viewSize.height = 2400;
 var colors = []; var palette = []; 
 var woodframe = new Path();var framegap = new Path();
 var frameColor = "#60513D"
-var petalspiky = R.random_int(5, 12);
+var petalspiky = R.random_int(8, 20);
 console.log('spikeyness: '+petalspiky)
 
 numofcolors = R.random_int(1, 6);; //Sets the number of colors to pick for the pallete
@@ -277,7 +277,7 @@ for (z = 0; z < stacks; z++) {
     //$fx.preview();
 
     
-    floatingframe();
+    //floatingframe();
     //send features to upspire.studio
     upspirestudio(features)
 
